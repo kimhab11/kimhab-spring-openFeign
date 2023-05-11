@@ -1,6 +1,7 @@
-package com.example.kimhabspringopenfeign;
+package com.example.kimhabspringopenfeign.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.kimhabspringopenfeign.feign_interface.JSONPlaceHolderClient;
+import com.example.kimhabspringopenfeign.model.Post;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

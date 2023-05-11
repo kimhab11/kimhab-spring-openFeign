@@ -1,4 +1,4 @@
-package com.example.kimhabspringopenfeign;
+package com.example.kimhabspringopenfeign.model;
 
 
 public class Post {

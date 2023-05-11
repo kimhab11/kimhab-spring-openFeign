@@ -1,1 +1,17 @@
 
+#config with properties
+#with specific feign client name , default -> jplaceholder:
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: FULL
+        #Interceptors
+        requestInterceptors:
+          com.example.kimhabspringopenfeign.CustomRequestInterceptor
+  # support Hystrix (fallback call)
+  hystrix:
+    enabled: true
+

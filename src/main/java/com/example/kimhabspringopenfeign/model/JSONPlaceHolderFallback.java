@@ -1,5 +1,7 @@
-package com.example.kimhabspringopenfeign;
+package com.example.kimhabspringopenfeign.model;
 
+import com.example.kimhabspringopenfeign.feign_interface.JSONPlaceHolderClient;
+import com.example.kimhabspringopenfeign.model.Post;
 import org.springframework.stereotype.Component;
 
 import java.util.Collections;
