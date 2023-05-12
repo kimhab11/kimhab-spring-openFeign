@@ -1,6 +1,6 @@
 
 #config with properties
-#with specific feign client name , default -> jplaceholder:
+#with specific feign client name , default -> jplaceholder(name @FeignClient) :
 feign:
   client:
     config:
@@ -10,8 +10,22 @@ feign:
         loggerLevel: FULL
         #Interceptors
         requestInterceptors:
-          com.example.kimhabspringopenfeign.CustomRequestInterceptor
+          com.example.kimhabspringopenfeign.config.CustomRequestInterceptor
+        errorDecoder:
+          com.example.kimhabspringopenfeign.customeError.CustomErrorDecoder
   # support Hystrix (fallback call)
   hystrix:
     enabled: true
+  # circuitbreaker as call fallback class
+  circuitbreaker:
+    enabled: true
 
+logging:
+  level:
+    com.example.kimhabspringopenfeign.feign_interface: DEBUG
+
+#data
+
+my-app:
+  user: kimhab
+  pass: 123

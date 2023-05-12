@@ -1,4 +1,4 @@
-package com.example.kimhabspringopenfeign;
+package com.example.kimhabspringopenfeign.config;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;

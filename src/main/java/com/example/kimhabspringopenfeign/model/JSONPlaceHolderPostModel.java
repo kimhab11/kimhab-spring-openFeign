@@ -1,7 +1,7 @@
 package com.example.kimhabspringopenfeign.model;
 
 
-public class Post {
+public class JSONPlaceHolderPostModel {
     private Integer userId;
     private Integer id;
     private String title;
